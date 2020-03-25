@@ -1,6 +1,8 @@
+
 <div class="container" style="position: absolute;">
   
   <h1 style="margin:5%;text-align: center;">Contacts List</h1>
+  <app-details [id]="curr_id"></app-details>
   <mat-form-field>
     <mat-label>Search</mat-label>
     <input matInput (keyup)="applyFilter($event)" placeholder="Start Typing...">
@@ -30,4 +32,7 @@
   [pageSizeOptions]="[6, 12]"
   (page)="pageEvent = getServerData($event)">
 </mat-paginator>
+
+
+
 </div>

@@ -12,11 +12,14 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { DetailsComponent } from './details/details.component';
+import {MatCardModule} from '@angular/material/card'
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
+    DetailsComponent,
     
   ],
   imports: [
@@ -28,7 +31,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatSortModule,
     MatFormFieldModule,
     MatInputModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatCardModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

@@ -21,6 +21,7 @@ export class ListComponent implements OnInit {
   pageEvent: PageEvent;
   per_page:number;
   total:number;
+  curr_id:number;
   contacts:any = new MatTableDataSource<Contact>();
   @ViewChild(MatSort, {static: true}) sort: MatSort;
   @ViewChild(MatTable) table: MatTable<any>;
@@ -58,7 +59,7 @@ export class ListComponent implements OnInit {
     return event;
   }
   detailInfo(id){
-    console.warn(id);
+    this.curr_id=id;
      
   }
   applyFilter(event: Event) {

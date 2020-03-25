@@ -1,0 +1,22 @@
+<div class="container">
+    <mat-card *ngIf="contact">
+        <mat-card-header>
+                <div><img mat-card-avatar src="{{contact.data.avatar}}"></div>
+                <mat-card-title>{{contact.data.first_name}} {{contact.data.last_name}}</mat-card-title>
+                <mat-card-subtitle>{{contact.data.email}}</mat-card-subtitle>
+        </mat-card-header><hr>
+        <h1>Company Details</h1>
+        <div><strong>Company Name : </strong>{{contact.ad.company}}</div>
+        <div><strong>Website : </strong><a href="{{contact.ad.url}}">{{contact.ad.url}}</a></div>
+        <br>
+        <div>
+            <p>{{contact.ad.text}}</p>
+        </div>
+        <mat-card-content>
+
+        </mat-card-content>
+        
+    </mat-card>
+    
+</div>
+
